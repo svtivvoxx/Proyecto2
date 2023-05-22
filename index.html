@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="assets/img/AK47.svg" type="image/x-icon">
+    <title>Inicio | AKickz</title>
+
+</head>
+
+<body>
+    <div class="sticky-top">
+        <!-- ////////////////// ENCABEZADO ////////////////// -->
+        <header>
+            <div class="container-fluid d-flex justify-content-between align-items-center"
+                style="background-color: rgb(41, 41, 41);">
+                <div>
+                    <a class="navbar-brand" href="contacto.html">
+                        <i class="fa-regular fa-user text-white fa-xl"></i>
+                    </a>
+                </div>
+                <div>
+                    <a class="navbar-brand" href="index.html">
+                        <img id="logo" class="Ak47" src="assets/img/AK47.svg" alt="icon">
+                    </a>
+                </div>
+                <div class="text-end order-lg-last">
+                    <button id="botonicon" class="btn rounded-circle border"
+                        onclick="changeIcon();changeBackgroundColor();cambiarColorTexto()">
+                        <i id="icon" class="fa-solid fa-moon fa-lg text-white"></i>
+                    </button>
+                    <a href="carrito.html"><i class="fa-solid fa-cart-shopping fa-xl text-white"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- ////////////////// BARRA DE NAVEGACION ////////////////// -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:rgb(32, 32, 32);">
+            <div class="container-fluid ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-warning text-decoration-underline"
+                                href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="Hombre.html">Hombre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="Mujer.html">Mujer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="Accesorios.html">Accesorios</a>
+                        </li>
+                        <li class="nav-item dropdown" onmouseenter="showDropdown()" onmouseleave="hideDropdown()">
+                            <a class="nav-link active" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Otros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdownMenu">
+                                <li><a class="dropdown-item" href="about.html">Nosotros</a></li>
+                                <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- ////////////////// MAIN ////////////////// -->
+    <main>
+        <div id="carouselExampleAutoplaying" class="carousel slide text-center mt-2" data-bs-ride="carousel"
+            data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p class="Texto">¡Bienvenido/a a Akickz, tu tienda de zapatillas favorita!</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="Texto">15% de descuento en tu primera compra sólo para Miembros - Cupón: AKickz</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="Texto">Revisa los nuevos Lanzamientos</p>
+                </div>
+            </div>
+        </div>
+        <!-- ////////////////// CARRUSEL ////////////////// -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="Hombre.html">
+                        <img src="https://api.cxl8rgz-articulos1-p1-public.model-t.cc.commerce.ondemand.com/medias/BannerprincipalBL-SALE-02-05-2023.jpg?context=bWFzdGVyfHJvb3R8MzQ4MTY1fGltYWdlL2pwZWd8aDY4L2hiZC85NDE3Mzc0NzI4MjIyL0Jhbm5lcnByaW5jaXBhbEJMX1NBTEVfMDJfMDVfMjAyMy5qcGd8Zjg1NmM3YzgwYTk3MWM3YjA2NDQ1YTUyMjA2OWQ4MTQzZmRlOTc5Y2ZlZDcwMjI0NGEwOWNlZmJmMmM2MDRiNg"
+                            class="d-block w-100" alt="Jordan">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="Hombre.html">
+                        <img src="assets/img/Adidas.png" class="d-block w-100" alt="Adidas">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="Hombre.html">
+                        <img src="assets/img/Samba.png" class="d-block w-100" alt="Samba">
+                    </a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container">
+            <div class="text-center">
+                <h1 style="font-family: 'Anton', sans-serif;" class="Texto mt-4">AKickz, tu tienda favorita de
+                    zapatillas!</h1>
+                <a href="Hombre.html" class="btn btn-primary btn-dark">Comprar</a>
+            </div>
+        </div>
+
+        <!-- ////////////////// CARD ////////////////// -->
+        <div class="container">
+            <div class="row mt-5 mb-3">
+                <div class="col-md-6 text-center ">
+                    <a href="Hombre.html">
+                        <img src="assets/img/Hombre.png" alt="Imagen 1" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <a href="Mujer.html">
+                        <img src="assets/img/Mujer.png" alt="Imagen 2" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="carouselEjemplo" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container mt-2">
+                            <div class="row text-center">
+                                <div class="col-md-2 my-1">
+                                    <div class="card bg-transparent border">
+                                        <img src="assets/img/cherry.webp"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title Texto">Air Jordan 11 Retro</h5>
+                                            <p class="card-text Texto">$209.000</p>
+                                            <a href="Xzapatilla.html" class="btn btn-primary btn-dark">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 my-1">
+                                    <div class="card bg-transparent border">
+                                        <img src="assets/img/11low.jpg"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title Texto">Air Jordan 11 Retro Low</h5>
+                                            <p class="card-text Texto">$216.990</p>
+                                            <a href="Xzapatilla.html" class="btn btn-primary btn-dark">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 my-1">
+                                    <div class="card bg-transparent border">
+                                        <img src="assets/img/Retro1.jpg"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title Texto">Air Jordan 1 Retro Hi Og</h5>
+                                            <p class="card-text Texto">$224.990</p>
+                                            <a href="/Xzapatilla.html" class="btn btn-primary btn-dark">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 my-1">
+                                    <div class="card bg-transparent border">
+                                        <img src="assets/img/Dunklow.jpg"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title Texto">Nike SB Dunk Low Pro QS RTJ</h5>
+                                            <p class="card-text Texto">$146.990</p>
+                                            <a href="/Xzapatilla.html" class="btn btn-primary btn-dark">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 my-1">
+                                    <div class="card bg-transparent border">
+                                        <img src="assets/img/dunkHigh.jpg"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title Texto">Nike SB Dunk High QS RTJ</h5>
+                                            <p class="card-text Texto">$159.990</p>
+                                            <a href="/Xzapatilla.html" class="btn btn-primary btn-dark">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 my-1">
+                                    <div class="card bg-transparent border">
+                                        <img src="assets/img/Sambaa 1.png"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title Texto">adidas Samba OG Originals</h5>
+                                            <p class="card-text Texto">$99.990</p>
+                                            <a href="/Xzapatilla.html" class="btn btn-primary btn-dark">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container mt-2">
+                            <div class="row text-center">
+                                <div class="col-md-2 my-1">
+                                    <div class="card bg-transparent border">
+                                        <img src="assets/img/tnGrey.webp"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title Texto">Nike Air Max Plus SE</h5>
+                                            <p class="card-text Texto">$179.990</p>
+                                            <a href="/Xzapatilla.html" class="btn btn-primary btn-dark">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 my-1">
+                                    <div class="card bg-transparent border">
+                                        <img src="assets/img/airmaxpenny.webp"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title Texto">Nike Air Max Penny </h5>
+                                            <p class="card-text Texto">$199.990</p>
+                                            <a href="/Xzapatilla.html" class="btn btn-primary btn-dark">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 my-1">
+                                    <div class="card bg-transparent border">
+                                        <img src="assets/img/tnRed.webp"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title Texto">Nike Air Max Plus Red</h5>
+                                            <p class="card-text Texto">$179.990</p>
+                                            <a href="/Xzapatilla.html" class="btn btn-primary btn-dark">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 my-1">
+                                    <div class="card bg-transparent border">
+                                        <img src="assets/img/Adi2000.png"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title Texto">Adidas ADI2000 Black</h5>
+                                            <p class="card-text Texto">$99.000</p>
+                                            <a href="/Xzapatilla.html" class="btn btn-primary btn-dark">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 my-1">
+                                    <div class="card bg-transparent border">
+                                        <img src="assets/img/BlazerYelow.webp"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title Texto">Air Jordan 11 Retro</h5>
+                                            <p class="card-text Texto">$209.000</p>
+                                            <a href="/Xzapatilla.html" class="btn btn-primary btn-dark">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 my-1">
+                                    <div class="card bg-transparent border">
+                                        <img src="assets/img/Blazer.webp"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title Texto">Nike SB Zoom Blazer Mid</h5>
+                                            <p class="card-text Texto">$99.990</p>
+                                            <a href="/Xzapatilla.html" class="btn btn-primary btn-dark">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselEjemplo"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselEjemplo"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="mt-4 ">
+            <img src="assets/img/miles.png" alt="foto" class="card-img-top">
+        </div>
+    </main>
+
+    <!-- ////////////////// FOOTER ////////////////// -->
+    <footer class="container-fluid p-5 mt-2" style="background-color: rgb(41, 41, 41);">
+        <div class="row">
+            <div class="col-md-3 text-center text-white">
+                <img class="Ak47-footer" src="assets/img/AK47.svg" alt="Ak47">
+                <p>&copy;2023 - Ak47 Inc.</p>
+            </div>
+            <div class="col-md-3 text-center text-white">
+                <h4>Mapa de página</h4>
+                <hr>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card bg-transparent text-white">
+                    <div class="card-header text-center">
+                        <h1 class="text-white">Reloj con fecha y hora</h1>
+                        <div id="clock" class="text-white"></div>
+                    </div>
+                    <div class="card-body text-center">
+                        <div id="weather" class=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="container">
+                    <div class="container">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/Funciones.js"></script>
+    <script src="assets/js/texto.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC746MxqK5e_2iF0DdX2b1G7Ou1o_563HQ&callback=initMap"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

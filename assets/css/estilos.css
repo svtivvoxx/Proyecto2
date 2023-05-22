@@ -1,0 +1,71 @@
+body {
+  transition: background-color 0.5s ease;
+}
+
+.container {
+  max-width: 400px;
+  margin-top: 50px;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.alert {
+  margin-top: 20px;
+}
+
+.form-control {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.carhartt {
+  width: 1850px;
+  height: 350px;
+}
+
+.navbar-nav .nav-link {
+  transition: font-size 0.2s;
+  color: white;
+  font-size: 1.2em;
+  margin-right: 15px;
+
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+#clock {
+  font-size: 24px;
+  text-align: center;
+}
+
+.usuario {
+  width: 30px;
+  height: 30px;
+}
+
+.Ak47 {
+  width: 80px;
+  height: 80px;
+}
+
+.Ak47-footer {
+  width: 200px;
+  height: 200px;
+}
+
+#map {
+  height: 250px;
+  width: 100%;
+}
+
+
